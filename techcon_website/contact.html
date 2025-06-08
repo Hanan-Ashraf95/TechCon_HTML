@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TechCon 2024 - Contact Us</title>
+</head>
+<body>
+    <header>
+        <!-- This header should be consistent across all pages -->
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get in Touch with TechCon 2024</h2>
+            <p>Have questions about TechCon 2024? We'd love to hear from you!</p>
+
+            <h3>General Inquiries:</h3>
+            <p>Email us directly: <a href="mailto:contact@techcon.com">contact@techcon.com</a></p> <!-- Use the example email given as is -->
+
+            <h3>Connect on Social Media:</h3>
+            <ul>
+                <li><a href="https://twitter.com/TechCon2024" target="_blank">Twitter (X)</a></li>
+                <li><a href="https://linkedin.com/company/techcon2024" target="_blank">LinkedIn</a></li>
+                <li><a href="https://facebook.com/TechCon2024" target="_blank">Facebook</a></li>
+            </ul>
+
+            <h3>Our Location:</h3>
+            <p>Find us here:</p>
+            <!-- Embedded Google Map - CORRECTED src attribute -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9774643797687!2d-74.00845348459424!3d40.7410091793282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25983794b15c7%3A0x6b7d5705307b22a2!2sJacob%20K.%20Javits%20Convention%20Center!5e0!3m2!1sen!2sus!4v1678200000000!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact_form.php" method="post">
+                <!-- Field for Name -->
+                <p>
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="user_name" required>
+                </p>
+
+                <!-- Field for Email -->
+                <p>
+                    <label for="email">Your Email:</label><br>
+                    <input type="email" id="email" name="user_email" required>
+                </p>
+
+                <!-- Field for Message -->
+                <p>
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="user_message" rows="5" cols="40" required></textarea>
+                </p>
+
+                <!-- Submit Button -->
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- This footer should be consistent across all pages -->
+        <p>copyright &copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
